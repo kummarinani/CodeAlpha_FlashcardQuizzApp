@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Flashcard Quiz App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>📚 Flashcard Quiz</h1>
+            <p>Learn, revise and test yourself</p>
+        </header>
+
+        <!-- Flashcard Section -->
+        <div class="card-section">
+
+            <div class="card-info">
+                <span id="cardNumber">Card 1 of 1</span>
+            </div>
+
+            <div class="flashcard">
+
+                <div class="question">
+                    <h2 id="questionText">Question</h2>
+                </div>
+
+                <div class="answer" id="answerBox">
+                    <p id="answerText">Click "Show Answer" to reveal</p>
+                </div>
+
+            </div>
+
+            <button id="showAnswerBtn" class="show-btn">
+                Show Answer
+            </button>
+
+            <div class="navigation">
+                <button id="prevBtn">← Previous</button>
+                <button id="nextBtn">Next →</button>
+            </div>
+
+        </div>
+
+        <!-- Manage Cards -->
+        <div class="manage-section">
+
+            <h2>Manage Flashcards</h2>
+
+            <div class="form">
+
+                <input
+                    type="text"
+                    id="questionInput"
+                    placeholder="Enter question"
+                >
+
+                <input
+                    type="text"
+                    id="answerInput"
+                    placeholder="Enter answer"
+                >
+
+                <div class="form-buttons">
+                    <button id="addBtn">➕ Add Card</button>
+                    <button id="editBtn">✏️ Edit Card</button>
+                    <button id="deleteBtn">🗑️ Delete Card</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
